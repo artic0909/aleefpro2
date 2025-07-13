@@ -24,6 +24,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/serach-responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,8 +38,12 @@
                     <a class="text-body mr-3" href="faq.html">FAQs</a>
                 </div>
             </div>
+
+
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
+
+
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">
                             EN
@@ -49,6 +54,22 @@
                             <button class="dropdown-item" type="button">RU</button>
                         </div>
                     </div>
+
+
+                    <div class="btn-group initial-hide">
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for products" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-transparent text-primary">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -199,36 +220,39 @@
 
     <!-- Contact Start -->
     <div class="container-fluid">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Frequently Asked Questions</span></h2>
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span
+                class="bg-secondary pr-3">Frequently Asked Questions</span></h2>
         <div class="row px-xl-5">
             <div class="col-lg-12 mb-5">
                 <div class="contact-form bg-light p-30">
 
                     <!-- Accordion -->
-                     <div class="faq-accordion">
+                    <div class="faq-accordion">
 
-  <div class="faq-item">
-    <button class="faq-question">What is your return policy?</button>
-    <div class="faq-answer">
-      <p>We accept returns within 7 days of delivery. Items must be unused and in original packaging.</p>
-    </div>
-  </div>
+                        <div class="faq-item">
+                            <button class="faq-question">What is your return policy?</button>
+                            <div class="faq-answer">
+                                <p>We accept returns within 7 days of delivery. Items must be unused and in original
+                                    packaging.</p>
+                            </div>
+                        </div>
 
-  <div class="faq-item">
-    <button class="faq-question">Can I customize products with my logo?</button>
-    <div class="faq-answer">
-      <p>Yes! Select your preferred placement and send us an enquiry with your logo file.</p>
-    </div>
-  </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Can I customize products with my logo?</button>
+                            <div class="faq-answer">
+                                <p>Yes! Select your preferred placement and send us an enquiry with your logo file.</p>
+                            </div>
+                        </div>
 
-  <div class="faq-item">
-    <button class="faq-question">How long does delivery take?</button>
-    <div class="faq-answer">
-      <p>Delivery typically takes 5–10 business days depending on customization and location.</p>
-    </div>
-  </div>
+                        <div class="faq-item">
+                            <button class="faq-question">How long does delivery take?</button>
+                            <div class="faq-answer">
+                                <p>Delivery typically takes 5–10 business days depending on customization and location.
+                                </p>
+                            </div>
+                        </div>
 
-</div>
+                    </div>
 
                 </div>
             </div>
@@ -333,29 +357,29 @@
     <script src="js/main.js"></script>
 
     <script>
-  const questions = document.querySelectorAll('.faq-question');
+        const questions = document.querySelectorAll('.faq-question');
 
-  questions.forEach(q => {
-    q.addEventListener('click', () => {
-      const isActive = q.classList.contains('active');
+        questions.forEach(q => {
+            q.addEventListener('click', () => {
+                const isActive = q.classList.contains('active');
 
-      // Close all answers
-      document.querySelectorAll('.faq-answer').forEach(a => {
-        a.style.maxHeight = null;
-        a.style.paddingBottom = 0;
-      });
-      document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    a.style.maxHeight = null;
+                    a.style.paddingBottom = 0;
+                });
+                document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
 
-      // Toggle current one
-      if (!isActive) {
-        const answer = q.nextElementSibling;
-        q.classList.add('active');
-        answer.style.maxHeight = answer.scrollHeight + "px";
-        answer.style.paddingBottom = "15px";
-      }
-    });
-  });
-</script>
+                // Toggle current one
+                if (!isActive) {
+                    const answer = q.nextElementSibling;
+                    q.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    answer.style.paddingBottom = "15px";
+                }
+            });
+        });
+    </script>
 
 </body>
 
