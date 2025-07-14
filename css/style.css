@@ -10812,18 +10812,20 @@ h6 {
 }
 
 .carousel-indicators li {
-  width: 15px;
-  height: 15px;
+  width: 7px;
+  height: 7px;
   margin: 0 3px 12px 3px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
   transition: .5s;
+  border-radius: 50%;
 }
 
 .carousel-indicators .active {
-  width: 30px;
-  background: #FF5E14;
-  border: 1px solid #FF5E14;
+  width: 7px;
+  background: #9d9e9c;
+  border: 1px solid #9d9e9c;
+  border-radius: 50%;
 }
 
 .carousel-caption {
