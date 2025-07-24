@@ -229,12 +229,13 @@
                 <h5 class="section-title position-relative text-uppercase mb-3"><span
                         class="bg-secondary pr-3">Criteria</span></h5>
                 <div class="bg-light p-30 mb-5">
-                    <div class="border-bottom">
+                    <div class="border-bottom" style="position: relative; overflow: hidden;">
                         <h6 class="mb-3">Add Your Logo</h6>
-                        <small>We’ll place your logo based on the size chart and placement guide. You can also choose a
-                            custom position — just let us know! Send your enquiry for logo placement and customization,
-                            and don’t forget to share a high-quality logo file.</small>
-                        <img src="img/customize-dummy.jpg" class="img-fluid" alt="">
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusamus maxime fugiat sequi
+                            doloremque alias ut cum. Nobis, beatae suscipit.</small>
+                        <img src="img/category1.webp" class="img-fluid" alt="">
+                        <img id="logoPreview" class="position-absolute"
+                            style="top: 35%; left: 35%; width: 80px; display: none;" />
                     </div>
 
                 </div>
@@ -247,6 +248,26 @@
                 <h5 class="section-title position-relative text-uppercase mb-3"><span
                         class="bg-secondary pr-3">Customization</span></h5>
                 <div class="bg-light p-30 mb-5">
+                    <h6 class="section-title position-relative text-uppercase mb-3"><span class="pr-3">Customization
+                            Actions</span></h6>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-4">
+                            <label for="xCoord">X (Left %)</label>
+                            <input type="number" id="xCoord" class="form-control" value="30" min="0" max="100" step="1">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="yCoord">Y (Top %)</label>
+                            <input type="number" id="yCoord" class="form-control" value="30" min="0" max="100" step="1">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="logoSize">Logo Size (px)</label>
+                            <input type="number" id="logoSize" class="form-control" value="80" min="1" step="1">
+                        </div>
+                    </div>
+
+                    <h6 class="section-title position-relative text-uppercase mb-3 mt-3"><span class="pr-3">Product
+                            Details</span></h6>
+
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label>Product Name</label>
@@ -315,15 +336,26 @@
                             <label>Detail Enquiry</label>
                             <textarea name="" id="" class="form-control" placeholder="Write your custom quote"
                                 rows="5"></textarea>
-
                         </div>
 
                         <div class="col-md-12 form-group">
-                            <label>Add Logo</label>
-                            <input type="file" class="form-control border-0">
-                            <small>Add highquality logo</small>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="logoInput">Upload Logo</label>
+                                    <input type="file" id="logoInput" class="form-control" accept="image/*">
+                                    <small class="text-muted">Upload high quality logo</small>
+                                </div>
+
+                                <div class="col-md-6 form-group">
+                                    <label for="logoInput">Upload Live View Image</label>
+                                    <input type="file" id="logoInput" class="form-control" accept="image/*">
+                                    <small class="text-muted">Take a Screenshot and upload</small>
+                                </div>
+                            </div>
 
                         </div>
+
+
 
 
                         <div class="col-md-12">
@@ -337,6 +369,9 @@
         </div>
     </div>
     <!-- Product Customize End -->
+
+
+
 
 
 
@@ -449,6 +484,39 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+
+
+    <script>
+        const logo = document.getElementById('logoPreview');
+        const xInput = document.getElementById('xCoord');
+        const yInput = document.getElementById('yCoord');
+        const sizeInput = document.getElementById('logoSize');
+        const fileInput = document.getElementById('logoInput');
+
+        fileInput.addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                logo.src = URL.createObjectURL(file);
+                logo.style.display = 'block';
+                updateLogoPosition();
+                updateLogoSize();
+            }
+        });
+
+        xInput.addEventListener('input', updateLogoPosition);
+        yInput.addEventListener('input', updateLogoPosition);
+        sizeInput.addEventListener('input', updateLogoSize);
+
+        function updateLogoPosition() {
+            logo.style.left = xInput.value + '%';
+            logo.style.top = yInput.value + '%';
+        }
+
+        function updateLogoSize() {
+            logo.style.width = sizeInput.value + 'px';   // 1px precision
+            // height auto-keeps aspect ratio
+        }
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
