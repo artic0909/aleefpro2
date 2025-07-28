@@ -46,6 +46,18 @@
       <div class="col-lg-6 text-center text-lg-right">
         <div class="d-inline-flex align-items-center">
 
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">
+              <i class="fa-regular fa-user"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button"><i class="fa-solid fa-gear"></i> Profile</button>
+              <button class="dropdown-item" type="button"><i class="fa-solid fa-power-off"></i> Logout</button>
+            </div>
+          </div>
+
+          &nbsp;
+
 
           <div class="btn-group">
             <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">
@@ -60,7 +72,8 @@
 
 
           <div class="btn-group initial-hide">
-            <form action="">
+            <div style="display: flex; gap: 5px;">
+              <form action="">
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search for products" />
                 <div class="input-group-append">
@@ -70,6 +83,15 @@
                 </div>
               </div>
             </form>
+
+              <a href="" class="btn px-0">
+                <i class="fas fa-shopping-cart text-primary"></i>
+                <span class="badge text-danger border border-warning rounded-circle"
+                  style="">0</span>
+              </a>
+            </div>
+            
+            
           </div>
 
 
@@ -97,6 +119,8 @@
             </div>
           </div>
         </form>
+
+        
       </div>
       <div class="col-lg-4 col-6 text-right">
         <p class="m-0">Customer Service</p>
@@ -189,9 +213,9 @@
             </div>
             <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
               <a href="" class="btn px-0">
-                <i class="fas fa-heart text-primary"></i>
-                <span class="badge text-secondary border border-secondary rounded-circle"
-                  style="padding-bottom: 2px">0</span>
+                <i class="fas fa-regular fa-user text-primary"></i>
+                <span class="badge text-success"
+                  style="padding-bottom: 2px">✔</span>
               </a>
               <a href="" class="btn px-0 ml-3">
                 <i class="fas fa-shopping-cart text-primary"></i>
@@ -577,19 +601,12 @@
       <span class="bg-secondary pr-3">Safety Products</span>
     </h2>
     <div class="row px-xl-5">
+      
       <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
         <div class="product-item bg-light mb-4">
           <div class="product-img position-relative overflow-hidden">
             <img class="img-fluid w-100" src="img/category.webp" alt="" />
-            <div class="product-action">
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-pen-to-square"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-circle-info"></i></a>
-            </div>
+            
           </div>
           <div class="text-center py-4 p-3">
             <a class="h6 text-decoration-none text-cl" href="">DV2183 Enhanced Visibility Identification HiVis Contrast
@@ -606,15 +623,8 @@
               <small class="fa fa-star text-primary mr-1"></small>
               <small class="fa fa-star text-primary mr-1"></small>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-        <div class="product-item bg-light mb-4">
-          <div class="product-img position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/category2.webp" alt="" />
-            <div class="product-action">
+            <div class="product-actions mt-3" style="display: flex; justify-content: space-evenly;">
               <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
 
               <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
@@ -624,222 +634,11 @@
               <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-circle-info"></i></a>
             </div>
           </div>
-          <div class="text-center py-4 p-3">
-            <a class="h6 text-decoration-none text-cl" href="">DV2183 Enhanced Visibility Identification HiVis Contrast
-              Mesh
-              Safety Vest</a>
-            <div class="d-flex align-items-center justify-content-center mt-2">
-              <h5>₹999.00</h5>
-              <h6 class="text-muted ml-2"><del>₹1053.00</del></h6>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mb-1">
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-            </div>
-          </div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-        <div class="product-item bg-light mb-4">
-          <div class="product-img position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/category3.webp" alt="" />
-            <div class="product-action">
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
 
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
 
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-pen-to-square"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-circle-info"></i></a>
-            </div>
-          </div>
-          <div class="text-center py-4 p-3">
-            <a class="h6 text-decoration-none text-cl" href="">DV2183 Enhanced Visibility Identification HiVis Contrast
-              Mesh
-              Safety Vest</a>
-            <div class="d-flex align-items-center justify-content-center mt-2">
-              <h5>₹999.00</h5>
-              <h6 class="text-muted ml-2"><del>₹1053.00</del></h6>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mb-1">
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-        <div class="product-item bg-light mb-4">
-          <div class="product-img position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/category5.webp" alt="" />
-            <div class="product-action">
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-pen-to-square"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-circle-info"></i></a>
-            </div>
-          </div>
-          <div class="text-center py-4 p-3">
-            <a class="h6 text-decoration-none text-cl" href="">DV2183 Enhanced Visibility Identification HiVis Contrast
-              Mesh
-              Safety Vest</a>
-            <div class="d-flex align-items-center justify-content-center mt-2">
-              <h5>₹999.00</h5>
-              <h6 class="text-muted ml-2"><del>₹1053.00</del></h6>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mb-1">
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-        <div class="product-item bg-light mb-4">
-          <div class="product-img position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/category8.webp" alt="" />
-            <div class="product-action">
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-pen-to-square"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-circle-info"></i></a>
-            </div>
-          </div>
-          <div class="text-center py-4 p-3">
-            <a class="h6 text-decoration-none text-cl" href="">DV2183 Enhanced Visibility Identification HiVis Contrast
-              Mesh
-              Safety Vest</a>
-            <div class="d-flex align-items-center justify-content-center mt-2">
-              <h5>₹999.00</h5>
-              <h6 class="text-muted ml-2"><del>₹1053.00</del></h6>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mb-1">
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-        <div class="product-item bg-light mb-4">
-          <div class="product-img position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/category6.webp" alt="" />
-            <div class="product-action">
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-pen-to-square"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-circle-info"></i></a>
-            </div>
-          </div>
-          <div class="text-center py-4 p-3">
-            <a class="h6 text-decoration-none text-cl" href="">DV2183 Enhanced Visibility Identification HiVis Contrast
-              Mesh
-              Safety Vest</a>
-            <div class="d-flex align-items-center justify-content-center mt-2">
-              <h5>₹999.00</h5>
-              <h6 class="text-muted ml-2"><del>₹1053.00</del></h6>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mb-1">
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-        <div class="product-item bg-light mb-4">
-          <div class="product-img position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/category11.webp" alt="" />
-            <div class="product-action">
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-pen-to-square"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-circle-info"></i></a>
-            </div>
-          </div>
-          <div class="text-center py-4 p-3">
-            <a class="h6 text-decoration-none text-cl" href="">DV2183 Enhanced Visibility Identification HiVis Contrast
-              Mesh
-              Safety Vest</a>
-            <div class="d-flex align-items-center justify-content-center mt-2">
-              <h5>₹999.00</h5>
-              <h6 class="text-muted ml-2"><del>₹1053.00</del></h6>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mb-1">
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-        <div class="product-item bg-light mb-4">
-          <div class="product-img position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/category4.webp" alt="" />
-            <div class="product-action">
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-pen-to-square"></i></a>
-
-              <a class="btn btn-outline-dark btn-square" href=""><i class="fa-solid fa-circle-info"></i></a>
-            </div>
-          </div>
-          <div class="text-center py-4 p-3">
-            <a class="h6 text-decoration-none text-cl" href="">DV2183 Enhanced Visibility Identification HiVis Contrast
-              Mesh
-              Safety Vest</a>
-            <div class="d-flex align-items-center justify-content-center mt-2">
-              <h5>₹999.00</h5>
-              <h6 class="text-muted ml-2"><del>₹1053.00</del></h6>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mb-1">
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-              <small class="fa fa-star text-primary mr-1"></small>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- Products End -->
